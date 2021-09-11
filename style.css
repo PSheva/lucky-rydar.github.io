@@ -26,8 +26,9 @@
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 10%;
-    transform: translate(-50%, -50%)
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50%;
 }
 
 .footer {
@@ -44,7 +45,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .menu-right {
@@ -109,10 +110,23 @@
     font-size: 150%;
 }
 
+.nav-text-all {
+    padding: 10%;
+}
+
 #horizontal-list a:hover {
     background-color: lightcyan;
 }
 
 ul#horizontal-list li {
     display: inline;
+    padding: 2%;
+}
+
+.memes-list {
+    text-align: center;
+}
+
+.meme {
+    padding-bottom: 5%;
 }
