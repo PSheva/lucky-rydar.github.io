@@ -1,126 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-            
 * {
     margin: 0;
     padding: 0;
 }
-            
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: cornflowerblue;
-    width: 100%;
-    height: 10%;
-}
-            
-.text-right {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(-50%, -50%)
+
+.wrapper {
+    position:absolute;
+    min-height: 100%;
+    width:100%;
+    display: flex;
 }
 
-.text-left {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    width: 50%;
+.header-center-footer-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.header {
+    min-height: 50px;
+    padding: 1em;
+    flex: 1;
+    background-color: cornflowerblue;
+}
+
+.center-container {
+    flex: 8;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    min-height: 50px;
+    padding: 1em;
+    flex: 1;
     background-color: cornflowerblue;
-    width: 100%;
-    height: 10%;
 }
 
-.text-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu-right {
-    bottom: 10%;
-    right: 0;
-    height: 80%;
-    width: 20%;
-    position: absolute;
+.left-menu {
+    flex: 1;
+    padding: 1em;
     background-color: lightsalmon;
-    overflow: auto
 }
 
-.menu-down {
-    position: absolute;
-    width: 80%;
-    height: 5%;
-    bottom: 10%;
-    left: 0%;
+.right-container {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-menu {
+    flex: 1;
+    max-height: 40px;
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+.down-container {
+    flex: 11;
+    display: flex;
+    flex-direction: row;
+}
+
+.down-center-container {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-menu {
+    flex: 1;
+    padding: 1em;
+    background-color: lightsalmon;
+}
+
+.center-menu {
+    flex: 11;
+    background-color: white;
+    padding: 1em;
+}
+
+.down-menu {
+    flex: 1;
+    max-height: 40px;
+    padding: 1em;
     background-color: lightgreen;
 }
 
-.menu-left {
-    position: absolute;
-    width: 20%;
-    height: 75%;
-    left: 0%;
-    top: 10%;
-    background-color: lightsalmon;
-    overflow: auto
+.header-inner-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    align-items: center;
 }
 
-.menu-top {
-    position: absolute;
-    width: 60%;
-    height: 5%;
-    left: 20%;
-    top: 10%;
-    background-color: lightgreen;
+.header-inner-rectangle {
+    flex: 1;
+    background-color: white;
+    max-width: 120px;
+    max-height: 20px;
+    text-align: center;
 }
 
-.menu-center {
-    position: absolute;
-    width: 60%;
-    height: 70%;
-    left: 20%;
-    top: 15%;
-    background-color: gainsboro;
-    overflow: auto;
+.nav-container {
+    padding-left: 50%;
+    flex: 2;
 }
-            
-.logo {
-    font-family: "Lobster";
-    font-size: 200%;
-    text-decoration: none;
+
+#horizontal-list {
+    justify-content: space-between;
+    display: flex;
 }
 
 .nav-text {
-    font-family: "Lobster";
     text-decoration: none;
-    color: gold;
+    color: white;
     font: bold;
-    font-size: 150%;
+    font-size: 2em;
 }
 
-.nav-text-all {
-    padding: 10%;
+nav li {
+    list-style: none;
 }
 
-#horizontal-list a:hover {
-    background-color: lightcyan;
+.footer-inner-container {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    align-items: center;
 }
 
-ul#horizontal-list li {
-    display: inline;
-    padding: 2%;
+.footer-some-text {
+    flex: 1;
+}
+
+.footer-inner-rectangle {
+    flex: 1;
+    background-color: white;
+    max-width: 120px;
+    max-height: 20px;
+    text-align: center;
 }
 
 .memes-list {
@@ -129,4 +147,6 @@ ul#horizontal-list li {
 
 .meme {
     padding-bottom: 5%;
+    text-decoration: none;
+    list-style-type: none;
 }
