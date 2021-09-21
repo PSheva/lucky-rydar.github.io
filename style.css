@@ -51,7 +51,7 @@
 
 .top-menu {
     flex: 1;
-    max-height: 40px;
+    /*min-height: 40px;*/
     background-color: lightgreen;
     padding: 1em;
 }
@@ -82,7 +82,7 @@
 
 .down-menu {
     flex: 1;
-    max-height: 40px;
+    /*min-height: 40px;*/
     padding: 1em;
     background-color: lightgreen;
 }
