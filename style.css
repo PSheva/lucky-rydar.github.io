@@ -18,6 +18,7 @@
 
 .header {
     min-height: 50px;
+    max-height: 100px;
     padding: 1em;
     flex: 1;
     background-color: cornflowerblue;
@@ -89,8 +90,9 @@
 .header-inner-container {
     display: flex;
     flex-direction: row;
-    margin: 1em;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .header-inner-rectangle {
@@ -125,8 +127,9 @@ nav li {
 .footer-inner-container {
     display: flex;
     flex-direction: row;
-    margin: 1em;
     align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .footer-some-text {
