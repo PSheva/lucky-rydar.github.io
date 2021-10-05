@@ -4,16 +4,17 @@ function main() {
     checkCookie()
 
     swapContents()
-    calcSquare(2)
+    calcSquare(3)
     createForm()
 
     pushColorInput()
     setBackground(window.localStorage.getItem("color")) // for task forth
 
     //task 5
-    // TODO: upload styles here
     uploadStyles()
-    task5()
+    
+    let ghg = document.querySelector(".header-inner-rectangle")
+    ghg.onclick = task5
 }
 
 function uploadStyles() {
